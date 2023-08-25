@@ -6,3 +6,11 @@
 a {
     text-decoration: none;
 }
+
+.top {
+    height: 1024px;
+    background-image: url(img/top1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
