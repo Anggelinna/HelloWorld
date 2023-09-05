@@ -70,9 +70,40 @@ a {
 
 }
 
-.top__content {
-    background-image: url();
+.for {
+    height: 556px;
+    background-image: url(img/top.2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+    
 }
-.content_play_1 {
-    background-image: url();
+
+.for_item {
+    height: 300px;
+    grid-column: span 4;
+    margin-top: 128px;
+    
+}
+
+.for_item_1 {
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/top.3.jpg), lightgray 50% / cover no-repeat;
+
+    
+}
+
+.for_item_2 { 
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/top.4.jpg), lightgray 50% / cover no-repeat;
+
+}
+
+.for_item_3 { 
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/top.5.jpg), lightgray 50% / cover no-repeat;
+    
 }
