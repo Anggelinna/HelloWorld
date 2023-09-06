@@ -30,7 +30,7 @@ a {
     color: #FFFFFF;
     padding-top: 218px;
     margin-bottom: 32px;
-    padding-left: 120px;
+    
 
 }
 
@@ -45,7 +45,7 @@ a {
     width: 481px;
     margin-top: 32px;
     margin-bottom: 44px;
-    padding-left: 120px;
+    
 
 }
 
@@ -57,8 +57,12 @@ a {
     outline: none;
     font-size: 18px;
     font-weight: 400;
-    margin-left: 120px;
 
+}
+
+.header__input:focus {
+    outline-color: transparent;
+    outline-style: solid;
 }
 
 .header__input::placeholder {
@@ -86,24 +90,42 @@ a {
     height: 300px;
     grid-column: span 4;
     margin-top: 128px;
-    
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-left: 32px;
+    padding-bottom: 32px;
+
+}
+
+.center {
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 .for_item_1 {
+    background-image: url(img/top.3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 16px;
-    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/top.3.jpg), lightgray 50% / cover no-repeat;
 
-    
 }
 
 .for_item_2 { 
+    background-image: url(img/top.4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 16px;
-    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/top.4.jpg), lightgray 50% / cover no-repeat;
-
 }
 
 .for_item_3 { 
+    background-image: url(img/top.5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 16px;
-    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/top.5.jpg), lightgray 50% / cover no-repeat;
-    
 }
