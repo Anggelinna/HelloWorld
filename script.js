@@ -12,10 +12,10 @@ let year = 2007;
 alert(year);
 
 
-let userName = 'Brendan';
+let userName1 = 'Brendan';
 // userName = prompt('Кто создал JavaScript?');
 
-alert(userName);
+alert(userName1);
 
 
 let a1 = 10;
@@ -50,8 +50,14 @@ let age = prompt('Сколько вам лет?');
 alert(age);
 
 
-const user = {
+let user = {
     name: 'Mira',
-    age: 22,
-    isAdmin: false,
-}
+    time: 22,
+    isAdmin: false,}
+
+let info = prompt('Какую информацию хотите узнать о пользователе ?');
+let userName = prompt('Как вас зовут?', 'Mira');
+let userTime = prompt('Сколько вам лет?');
+alert('Какую информацию хотите узнать о пользователе ?, ${userName},${userTime}'); // Выведет значение
+
+alert('Привет, Mira!');
