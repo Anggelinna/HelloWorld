@@ -60,4 +60,5 @@ let userName = prompt('Как вас зовут?');
 let userTime = prompt('Сколько вам лет?');
 alert(`Какую информацию хотите узнать о пользователе ?${userName}${userTime}`); // 9.4 задание.
 
+let name = prompt('Как вас зовут?');
 alert(`Привет, ${name}!`);  // 10 задание.
