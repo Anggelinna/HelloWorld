@@ -1,13 +1,17 @@
 @media (max-width: 767px) {
+    
     .center {
        padding-left: 16px;
        padding-right: 16px;
     }
 
     .header__title {
+        width: 343px;
+        height: 77.436px;
         font-size: 32px;
         line-height: normal;
         text-align: center;
+       
     }
 
     .title {
@@ -16,6 +20,7 @@
     }
 
     .for {
+        display: grid;
         grid-template-columns: repeat(4, 1fr);
 
         &__item {
