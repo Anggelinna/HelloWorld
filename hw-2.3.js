@@ -1,12 +1,12 @@
-let password = 'ьуь';  // задание 1.
-let parol = prompt ('Ведите пароль');
+let password = "пароль";  // задание 1.
+let parol = String(prompt("Введите пароль"));
+userAnswer = userAnswer.toLocaleLowerCase();
 
-if (parol == 'ьуь') {
-    alert('Пароль введен верно');
-} else {
-    alert('Пароль введен неправильно');
+if(parol === password){
+    console.log("Пароль введен верно");
+}else{
+    console.log("Пароль введен неправильно");
 }
-
 
 let c = 2;  // задание 2.
 if (c > 0 && c < 10) {
