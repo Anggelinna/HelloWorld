@@ -52,7 +52,7 @@ let b = '3';
 alert(Number(a) + Number(b));
 
 
-let monthNomber = 12(prompt('Введите номер месяца от 1 до 12'));  // задание 5.
+let monthNomber = prompt('Введите номер месяца от 1 до 12');  // задание 5.
 
 switch (monthNomber) {
     case 1: 
