@@ -1,6 +1,5 @@
 let password = "пароль";  // задание 1.
-let parol = String(prompt("Введите пароль"));
-userAnswer = userAnswer.toLocaleLowerCase();
+let parol = prompt("Введите пароль");
 
 if(parol === password){
     console.log("Пароль введен верно");
