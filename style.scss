@@ -18,19 +18,16 @@ a {
 
 .header__title {
     display: flex;
-    width: 788px;
-    height: 125.007px;
     flex-direction: column;
     justify-content: center;
     font-family: Montserrat;
     font-size: 64px;
     font-weight: 700;
-    line-height: 78px;
     text-align: left;
     color: #FFFFFF;
     padding-top: 218px;
     margin-bottom: 32px;
-    
+    padding-right: 440px;
 
 }
 
@@ -42,30 +39,29 @@ a {
     text-align: left;
     color: #FFFFFF;
     background-color: transparent;
-    width: 481px;
     margin-top: 32px;
     margin-bottom: 44px;
-    
+    padding-right: 703px;
 
 }
 
-.header__input {
-    width: 234.063px;
-    height: 48.603px;
+.header__button {
+    width: 235px;
+    height: 48px;
     border-radius: 30px;
     background: #9C0332;
     outline: none;
     font-size: 18px;
     font-weight: 400;
-
+    color: white;
 }
 
-.header__input:focus {
+.header__button:focus {
     outline-color: transparent;
     outline-style: solid;
 }
 
-.header__input::placeholder {
+.header__button::placeholder {
     font-family: Montserrat;
     color: #FFF;
     font-size: 18px;
@@ -74,8 +70,7 @@ a {
 
 }
 
-.for {
-    height: 556px;
+.games {
     background-image: url(img/top.2.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -86,7 +81,7 @@ a {
     
 }
 
-.for_item {
+.games__game {
     height: 300px;
     grid-column: span 4;
     margin-top: 128px;
@@ -108,7 +103,7 @@ a {
     padding-right: 120px;
 }
 
-.for_item_1 {
+.games__game_1 {
     background-image: url(img/top.3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -116,14 +111,14 @@ a {
 
 }
 
-.for_item_2 { 
+.games__game_2 { 
     background-image: url(img/top.4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 16px;
 }
 
-.for_item_3 { 
+.games__game_3 { 
     background-image: url(img/top.5.jpg);
     background-size: cover;
     background-repeat: no-repeat;
