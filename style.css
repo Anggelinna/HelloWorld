@@ -26,7 +26,6 @@ a {
   color: #FFFFFF;
   padding-top: 218px;
   margin-bottom: 32px;
-  padding-right: 440px;
 }
 
 .title {
@@ -39,7 +38,6 @@ a {
   background-color: transparent;
   margin-top: 32px;
   margin-bottom: 44px;
-  padding-right: 703px;
 }
 
 .header__button {
@@ -135,6 +133,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 60%;
   }
   .header__title {
     font-size: 32px;

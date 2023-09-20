@@ -16,6 +16,10 @@ a {
 
 }
 
+.top__content {
+    max-width: 60%;
+}
+
 .header__title {
     display: flex;
     flex-direction: column;
@@ -25,9 +29,8 @@ a {
     font-weight: 700;
     text-align: left;
     color: #FFFFFF;
-    padding-top: 218px;
-    margin-bottom: 32px;
-    padding-right: 440px;
+    
+    
 
 }
 
@@ -39,9 +42,8 @@ a {
     text-align: left;
     color: #FFFFFF;
     background-color: transparent;
-    margin-top: 32px;
-    margin-bottom: 44px;
-    padding-right: 703px;
+    
+    
 
 }
 
