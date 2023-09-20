@@ -1,12 +1,11 @@
-let password = 'ьуь';  // задание 1.
-let parol = prompt ('Ведите пароль');
+let password = "пароль";  // задание 1.
+let parol = prompt("Введите пароль");
 
-if (parol == 'ьуь') {
-    alert('Пароль введен верно');
-} else {
-    alert('Пароль введен неправильно');
+if(parol === password){
+    console.log("Пароль введен верно");
+}else{
+    console.log("Пароль введен неправильно");
 }
-
 
 let c = 2;  // задание 2.
 if (c > 0 && c < 10) {
@@ -17,32 +16,32 @@ if (c > 0 && c < 10) {
 
 let c1 = 0;  // задание 2.
 if (c1 > 0 && c1 < 10) {
-	alert('Неверно');
+	alert('Верно');
 } else {
-    alert('Верно');
+    alert('Неверно');
 }
 
 let c2 = 10;  // задание 2.
 if (c2 > 0 && c2 < 10) {
-	alert('Неверно');
+	alert('Верно');
 } else {
-    alert('Верно');
+    alert('Неверно');
 }
 
 let c3 = -3;  // задание 2.
 if (c3 > 0 && c3 < 10) {
-	alert('Неверно');
+	alert('Верно');
 } else {
-    alert('Верно');
+    alert('Неверно');
 }
 
 
 let d = 1;  // задание 3.
 let e = 5;
 if (d < 100 || e < 100) {
-	alert('Неверно');
+	alert('Верно');
 } else {
-    alert('Верно');
+    alert('Неверно');
 }
 
 
@@ -52,7 +51,7 @@ let b = '3';
 alert(Number(a) + Number(b));
 
 
-let monthNomber = 12(prompt('Введите номер месяца от 1 до 12'));  // задание 5.
+let monthNomber = Number(prompt("Введите номер месяца от 1 до 12")); // задание 5.
 
 switch (monthNomber) {
     case 1: 
