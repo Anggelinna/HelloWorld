@@ -15,6 +15,10 @@ a {
   background-size: cover;
 }
 
+.top__content {
+  max-width: 60%;
+}
+
 .header__title {
   display: flex;
   flex-direction: column;
@@ -24,8 +28,6 @@ a {
   font-weight: 700;
   text-align: left;
   color: #FFFFFF;
-  padding-top: 218px;
-  margin-bottom: 32px;
 }
 
 .title {
@@ -36,8 +38,6 @@ a {
   text-align: left;
   color: #FFFFFF;
   background-color: transparent;
-  margin-top: 32px;
-  margin-bottom: 44px;
 }
 
 .header__button {
@@ -133,18 +133,16 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 60%;
+    max-width: none;
   }
   .header__title {
     font-size: 32px;
     text-align: center;
-    padding-right: 0;
   }
   .title {
     text-align: center;
     font-size: 14px;
     line-height: 22px;
-    padding-right: 0;
   }
   .games {
     display: flex;
