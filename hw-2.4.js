@@ -28,6 +28,7 @@ const obj = {   // задание 4
     alert(key + ' - зарплата' + obj[key] + 'долларов');
 }
 
+
 for (let n = 1000, num = 0; n > 50; num++) {   // задание 5
     n /= 2;
     alert(n);
