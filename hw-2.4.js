@@ -5,9 +5,9 @@ while (i <= 2) {
 }
 
 let m = 1;   // задание 2
-let n = 5;  
+let nn = 5;  
 // на каждой итерации i увеличивается на 1
-while (m <= n) {
+while (m <= nn) {
     console.log(m);
     m += 1;
 }
@@ -25,14 +25,15 @@ const obj = {   // задание 4
     'Петя': '400'
     };
     for (const key in obj) {
-    alert(key + ' - зарплата' + obj[key] + 'долларов');
+    alert(key + ' - зарплата ' + obj[key] + ' долларов');
 }
 
 
-for (let n = 1000, num = 0; n > 50; num++) {   // задание 5
-    n /= 2;
-    alert(n);
-}
+let n = 1000, num = 0;  // задание 5
+do { n = n / 2; num++ } 
+while (n > 50) {
+    alert("num:" + n +  "Iterators" +num);
+}   
 
 
 let day = prompt('Введите число от 1 до 31');   // задание 6
@@ -44,58 +45,10 @@ alert('Вторнк');
 alert('Среда');
 } else if (day == 4) {
 alert('Четверг');
-} else if (day == 5) {
+} else if (day == 5, 5 + 7, 12 + 7, 19 + 7) {
 alert('Сегодня пятница, 5 число. Необходимо подготовить отчет');
 } else if (day == 6) {
 alert('Суббота');
 } else if (day == 7) {
 alert('Воскресенье');
-} else if (day == 8) {
-alert('Вторнк');
-} else if (day == 9) {
-alert('Среда');
-} else if (day == 10) {
-alert('Четверг');
-} else if (day == 11) {
-alert('Сегодня пятница, 11 число. Необходимо подготовить отчет');
-} else if (day == 12) {
-alert('Суббота');
-} else if (day == 13) {
-alert('Воскресенье');   
-} else if (day == 14) {
-alert('Вторнк');
-} else if (day == 15) {
-alert('Среда');
-} else if (day == 16) {
-alert('Четверг');
-} else if (day == 17) {
-alert('Сегодня пятница, 17 число. Необходимо подготовить отчет');
-} else if (day == 18) {
-alert('Суббота');
-} else if (day == 19) {
-alert('Воскресенье');
-} else if (day == 20) {
-alert('Вторнк');
-} else if (day == 21) {
-alert('Среда');
-} else if (day == 22) {
-alert('Четверг');
-} else if (day == 23) {
-alert('Сегодня пятница, 23 число. Необходимо подготовить отчет');
-} else if (day == 24) {
-alert('Суббота');
-} else if (day == 25) {
-alert('Воскресенье');
-} else if (day == 26) {
-alert('Вторнк');
-} else if (day == 27) {
-alert('Среда');
-} else if (day == 28) {
-alert('Четверг');
-} else if (day == 29) {
-alert('Сегодня пятница, 29 число. Необходимо подготовить отчет');
-} else if (day == 30) {
-alert('Суббота');
-} else if (day == 31) {
-alert('Воскресенье');
-}          
+}        
