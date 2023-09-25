@@ -45,10 +45,10 @@ if (d < 100 || e < 100) {
 }
 
 
-let aa = '2';  // задание 4.
-let bb = '3';
+let a = '2';  // задание 4.
+let b = '3';
 // Код выше изменять менять нельзя, чтобы решить задачу исправьте код ниже: 
-alert(Number(aa) + Number(bb));
+alert(Number(a) + Number(b));
 
 
 let monthNomber = Number(prompt("Введите номер месяца от 1 до 12")); // задание 5.
