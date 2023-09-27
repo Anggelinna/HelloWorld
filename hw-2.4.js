@@ -8,15 +8,15 @@ let m = 1;   // задание 2
 let nn = 5;  
 // на каждой итерации i увеличивается на 1
 while (m <= nn) {
-    console.log(m);
-    m += 1;
+  console.log(m);
+  m += 1;
 }
 
 let v = 7;   // задание 3
 let l = 22;  
 while (v <= l) {
-    console.log(v);
-    v += 1;
+  console.log(v);
+  v += 1;
 }
 
 const obj = {   // задание 4
