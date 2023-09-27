@@ -23,9 +23,9 @@ const obj = {   // задание 4
     'Коля': '200',
     'Вася': '300',
     'Петя': '400'
-    };
-    for (const key in obj) {
-    alert(key + ' - зарплата ' + obj[key] + ' долларов');
+  };
+  for (const key in obj) {
+  alert(key + ' - зарплата ' + obj[key] + ' долларов');
 }
 
 
