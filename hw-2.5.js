@@ -16,8 +16,12 @@ console.log(even_or_odd(2));
 console.log(even_or_odd(7));
 
 
-function number(num) {   // задание 3.1
+function func(num) {   // задание 3.1
   return num * num
-}
- 
-console.log(number(15));
+} 
+console.log(func(15));
+
+
+function func(num) {   // задание 3.2
+	return num ** 2;
+}                                                                                                            
