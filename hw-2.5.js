@@ -24,4 +24,72 @@ console.log(func(15));
 
 function func(num) {   // задание 3.2
 	return num ** 2;
-}                                                                                                            
+}            
+
+
+let howOld = () =>{    // задание 4
+let userAnswwer = prompt("Сколько вам лет");
+  
+if(userAnswwer < 0){
+  alert("Вы ввели неправильное значение");
+} else if(userAnswwer <= 12){
+  alert("Привет, друг!");
+} else{
+  alert("Добро пожаловать!");
+}
+}
+howOld();
+
+
+let mult = (a, b) => {    // задание 5
+
+if(isNaN(a) || isNaN(b)){
+  return "Одно или оба значения не являются числом";
+}else{
+  return a * b;
+}
+}
+console.log(mult(2, 5));
+
+
+let askNumber = () => {   // задание 6
+let askUser = Number(prompt("Введите число от 0 до 10"));
+  
+if( askUser > 10){
+  return "Нужно ввести число от 0 до 10";
+}else if(isNaN(askUser)){
+  return "Переданный параметр не является числом";
+}else{
+  let result = askUser ** 3;
+  return `${askUser} в кубе равняется ${result}`;
+  }
+}
+
+console.log(askNumber());
+
+//  задание 7
+function Area(){
+  return  Math.PI * this.radius ** 2;
+}
+
+function Perimeter(){
+  return   2 * Math.PI * this.radius;
+}
+
+let circle1 = {
+  radius: 10,
+  getArea: Area,
+  getPerimeter: Perimeter,
+}
+
+let circle2 = {
+  radius: 20,
+  getArea: Area,
+  getPerimeter: Perimeter,
+}
+
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());

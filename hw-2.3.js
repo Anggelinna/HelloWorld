@@ -3,7 +3,7 @@ let parol = prompt("Введите пароль");
 
 if(parol === password){
     console.log("Пароль введен верно");
-}else{
+} else{
     console.log("Пароль введен неправильно");
 }
 
