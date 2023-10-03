@@ -29,7 +29,7 @@
         display: flex;
         flex-direction: column;
         gap: 32px;
-
+        transition: all 0.3s ease-in-out;
         &__game {
             width: 343px;
             padding-left: 0;
@@ -37,5 +37,35 @@
         }
     }  
 
-    
+    .main__about_game {
+        padding-top: 51px;
+        padding-bottom: 85px;
+    }   
+
+    .about_game{
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+        &__left{
+            align-items: center;
+        }
+        &__title{
+            font-size: 32px;
+            line-height: 39px;
+        }
+        &__text{
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            width: 343px;
+        }
+    }
+    .about_game{
+        &__button{
+            transition: all 0.3s ease-in-out;
+            &:active{
+                transform: scale(1.02); 
+            }
+        }
+    }
 } 

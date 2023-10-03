@@ -42,7 +42,6 @@ howOld();
 
 
 let mult = (a, b) => {    // задание 5
-
 if(isNaN(a) || isNaN(b)){
   return "Одно или оба значения не являются числом";
 }else{
@@ -64,8 +63,8 @@ if( askUser > 10){
   return `${askUser} в кубе равняется ${result}`;
   }
 }
-
 console.log(askNumber());
+
 
 //  задание 7
 function Area(){
