@@ -131,11 +131,16 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 135px;
 }
 .about_game {
-    max-width: 60%;
+    display: flex;
+    width: 584px;
+    gap: 32px;
+    flex-wrap: wrap;
 }
 
 .about_game__title {
@@ -143,7 +148,7 @@ a {
     font-family: Montserrat;
     font-size: 48px;
     font-weight: 700;
-    padding-top: 282px;
+    
 }
 
 .about_game__text {
@@ -152,18 +157,17 @@ a {
     font-size: 18px;
     font-weight: 300;
     line-height: 32px; 
-    padding-top: 32px;
+
 }
 
-.about_game__left {
-    background-image: url(img/top_7.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.about_game__img {
     width: 485px;
     height: 333px;
-    color: black;
 
+}
+
+.img {
+    width: 100%;
 }
 
 .about_game__button {
@@ -175,7 +179,7 @@ a {
     font-size: 18px;
     font-weight: 400;
     color: white;
-    margin-top: 32px;
+
 }
 .about_game__button:focus {
     outline-color: transparent;

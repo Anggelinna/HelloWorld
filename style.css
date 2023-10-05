@@ -133,10 +133,17 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 135px;
 }
 
 .about_game {
-  max-width: 60%;
+  display: flex;
+  width: 584px;
+  gap: 32px;
+  flex-wrap: wrap;
 }
 
 .about_game__title {
@@ -144,7 +151,6 @@ a {
   font-family: Montserrat;
   font-size: 48px;
   font-weight: 700;
-  padding-top: 282px;
 }
 
 .about_game__text {
@@ -153,17 +159,15 @@ a {
   font-size: 18px;
   font-weight: 300;
   line-height: 32px;
-  padding-top: 32px;
 }
 
-.about_game__left {
-  background-image: url(img/top_7.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.about_game__img {
   width: 485px;
   height: 333px;
-  color: black;
+}
+
+.img {
+  width: 100%;
 }
 
 .about_game__button {
@@ -175,7 +179,6 @@ a {
   font-size: 18px;
   font-weight: 400;
   color: white;
-  margin-top: 32px;
 }
 
 .about_game__button:focus {
@@ -208,23 +211,31 @@ a {
     flex-direction: column;
     gap: 32px;
     transition: all 0.3s ease-in-out;
+    height: 1221px;
+    justify-content: center;
   }
   .games__game {
-    width: 343px;
+    width: 100%;
     padding-left: 0;
     margin-top: 0;
   }
   .main__about_game {
-    padding-top: 51px;
-    padding-bottom: 85px;
-  }
-  .about_game {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    height: 654px;
+    display: flex;
+    align-content: center;
     gap: 64px;
   }
-  .about_game__left {
+  .about_game {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
     align-items: center;
+    height: 334;
+  }
+  .about_game__img {
+    align-items: center;
+    width: 100%;
   }
   .about_game__title {
     font-size: 32px;

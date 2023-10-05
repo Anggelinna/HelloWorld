@@ -92,3 +92,22 @@ console.log(circle1.getPerimeter());
 
 console.log(circle2.getArea());
 console.log(circle2.getPerimeter());
+
+
+// задание на подключение игры ыремена года 
+let number = Number(prompt('Ведите номер месяца!'));
+function date(number) {
+  if((number >= 1 && number >= 2) || number === 12){
+    return "Зима";
+  } else if(number >= 3 && number <= 5){
+    return "Весна";
+  } else if (number >= 6 && number <= 8){
+    return "Лето";
+  } else if (number >= 9 && number <= 11){
+    return "Осень";
+  } else {
+    return "Такого месяца нет!";
+  }
+}
+
+alert(date(number));
