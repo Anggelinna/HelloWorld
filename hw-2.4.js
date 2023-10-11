@@ -32,11 +32,11 @@ const obj = {   // задание 4
 let n = 1000, num = 0;  // задание 5
 do { n = n / 2; num++ } 
 while (n > 50) {
-    alert("num:" + n +  "Iterators" +num);
+  alert("num:" + n +  "Iterators" +num);
 }   
 
 
 let friday = 5;   // задание 6
 for(let o = friday; o <=31; o+=7){
-   console.log(`Сегодня пятница ${o}-е число.Необходимо подготовить отчет.`);
+  console.log(`Сегодня пятница ${o}-е число.Необходимо подготовить отчет.`);
 }

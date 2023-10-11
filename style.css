@@ -28,6 +28,7 @@ a {
   font-weight: 700;
   text-align: left;
   color: #FFFFFF;
+  padding-top: 218px;
 }
 
 .title {
@@ -38,6 +39,7 @@ a {
   text-align: left;
   color: #FFFFFF;
   background-color: transparent;
+  padding-top: 32px;
 }
 
 .header__button {
@@ -49,6 +51,7 @@ a {
   font-size: 18px;
   font-weight: 400;
   color: white;
+  margin-top: 44px;
 }
 
 .header__button:focus {
@@ -124,6 +127,65 @@ a {
   border-radius: 16px;
 }
 
+.main__about_game {
+  background-image: url(img/top_6.jpg);
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 135px;
+}
+
+.about_game {
+  display: flex;
+  width: 584px;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.about_game__title {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.about_game__text {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.about_game__img {
+  width: 485px;
+  height: 333px;
+}
+
+.img {
+  width: 100%;
+}
+
+.about_game__button {
+  width: 235px;
+  height: 48px;
+  border-radius: 30px;
+  background: #9C0332;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.about_game__button:focus {
+  outline-color: transparent;
+  outline-style: solid;
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
   .center {
     padding-left: 16px;
@@ -148,10 +210,47 @@ a {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    transition: all 0.3s ease-in-out;
+    height: 1221px;
+    justify-content: center;
   }
   .games__game {
-    width: 343px;
+    width: 100%;
     padding-left: 0;
     margin-top: 0;
+  }
+  .main__about_game {
+    flex-wrap: wrap;
+    height: 654px;
+    display: flex;
+    align-content: center;
+    gap: 64px;
+  }
+  .about_game {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    height: 334;
+  }
+  .about_game__img {
+    align-items: center;
+    width: 100%;
+  }
+  .about_game__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .about_game__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    width: 343px;
+  }
+  .about_game__button {
+    transition: all 0.3s ease-in-out;
+  }
+  .about_game__button:active {
+    transform: scale(1.02);
   }
 }/*# sourceMappingURL=style.css.map */
