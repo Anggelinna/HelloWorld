@@ -29,4 +29,37 @@ der.push(2, 2, 2);
 console.log(der);
 
 
-let crr = [9, 8, 7, 'a', 6, 5];
+let crr = [9, 8, 7, 'a', 6, 5];   //задание 6
+crr = crr.sort();
+crr.pop('a')
+console.log(crr);
+
+
+let err = [9, 8, 7, 6, 5];   //задание 7
+let number = Number(prompt('Угадай число'));   
+if (err) {
+	alert('Угадал');
+} else {
+    alert('Не угадал');
+}
+
+
+//задание 8
+let reverse = a => a.split('') // разбиваем строку на массив символов
+                    .reverse() // инвертируем порядок следования элементов в массиве
+                    .join(''); // объединяем массив обратно в строку
+console.log(reverse('abcdef'))
+
+
+let frr = [[1, 2, 3], [4, 5, 6]];   //задание 9
+for (let subFrr of frr) {
+	for (let elem of subFrr) {
+		console.log(elem);
+	}
+}
+//console.log();
+
+
+let jrr = [112, 346, 1000, 1260];   //задание 11
+let result = jrr.map(item => (item **2));
+console.log(result);
