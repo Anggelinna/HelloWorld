@@ -52,14 +52,34 @@ console.log(reverse('abcdef'))
 
 
 let frr = [[1, 2, 3], [4, 5, 6]];   //задание 9
-for (let subFrr of frr) {
-	for (let elem of subFrr) {
-		console.log(elem);
+for (let frrIn of frr) {
+	for (let element of frrIn) {
+		console.log(element);
 	}
 }
-//console.log();
+
+ 
+const numbers = [5, 9, 3, 7, 2, 8, 1, 6, 4, 10];   //задание 10
+for (let i = 0; i < numbers.length - 1; i++) {
+const sum = numbers + numbers[i + 1];
+console.log("Сумма", numbers, "и", numbers[i + 1], "равна", sum);
+}
 
 
 let jrr = [112, 346, 1000, 1260];   //задание 11
 let result = jrr.map(item => (item **2));
 console.log(result);
+
+
+let string = (['salt', '', 'mem', 'hippopotamus', 'patatoes']);  //задание 12
+result = string.map(({length}) => length);
+console.log(result)
+
+
+let myArray = ([-1, 0, 5, -10, 56, -25, 25, 0, -1000, -2]);  //задание 13
+function getNegativeNumbers(array) {
+  return array.filter(function(value) {
+    return value < 0;
+  });
+}
+console.log(getNegativeNumbers(myArray));
