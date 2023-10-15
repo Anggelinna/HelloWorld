@@ -14,14 +14,16 @@ ar = ar.join(' ');
 console.log(ar);
 
 
-let brr = [    //задание 4
-	[1, 1, 1],
-	[1, 1, 1], 
-	[1, 1, 1],
-];
-console.log(brr[0]);
-console.log(brr[1]);
-console.log(brr[2])
+let brr = [[1, 1, 1], [1, 1, 1], [1, 1, 1]];    //задание 4
+for (let brrIn of brr) { 
+  for (let value of brrIn) {
+    console.log(value);
+  }
+}
+//console.log(brr);
+//console.log(brr[0]);
+//console.log(brr[1]);
+//console.log(brr[2])
 
 
 let der = [1, 1, 1];   //задание 5
@@ -36,12 +38,13 @@ console.log(crr);
 
 
 let err = [9, 8, 7, 6, 5];   //задание 7
-let number = Number(prompt('Угадай число'));   
-if (err) {
-	alert('Угадал');
+let number = Number(prompt('Угадай число'));
+if (el => el = err) {
+  alert('Угадал');
 } else {
-    alert('Не угадал');
+  alert('Не угадал');
 }
+console.log(err);
 
 
 //задание 8
@@ -52,11 +55,13 @@ console.log(reverse('abcdef'))
 
 
 let frr = [[1, 2, 3], [4, 5, 6]];   //задание 9
-for (let frrIn of frr) {
-	for (let element of frrIn) {
-		console.log(element);
-	}
-}
+frr.flat();
+console.log(frr)
+//for (let frrIn of frr) {
+//	for (let element of frrIn) {
+//		console.log(element);
+//	}
+//}
 
  
 const numbers = [5, 9, 3, 7, 2, 8, 1, 6, 4, 10];   //задание 10
