@@ -14,16 +14,15 @@ ar = ar.join(' ');
 console.log(ar);
 
 
-let brr = [[1, 1, 1], [1, 1, 1], [1, 1, 1]];    //задание 4
-for (let brrIn of brr) { 
-  for (let value of brrIn) {
-    console.log(value);
-  }
+let brr = [];   //задание 4
+for (let i = 0; i < 3; i++) {
+	brr[i] = []; // создаем подмассив
+	
+	for (let j = 0; j < 3; j++) {
+		brr[i].push(1); // заполняем подмассив числами
+	}
 }
-//console.log(brr);
-//console.log(brr[0]);
-//console.log(brr[1]);
-//console.log(brr[2])
+console.log(brr);
 
 
 let der = [1, 1, 1];   //задание 5
@@ -39,12 +38,11 @@ console.log(crr);
 
 let err = [9, 8, 7, 6, 5];   //задание 7
 let number = Number(prompt('Угадай число'));
-if (el => el = err) {
-  alert('Угадал');
+if (number == 9 || number == 8 || number == 7 || number == 6 || number == 5) {
+  alert('Угадал');   
 } else {
-  alert('Не угадал');
+  alert('Не угадал');   
 }
-console.log(err);
 
 
 //задание 8
@@ -55,8 +53,7 @@ console.log(reverse('abcdef'))
 
 
 let frr = [[1, 2, 3], [4, 5, 6]];   //задание 9
-frr.flat();
-console.log(frr)
+console.log(frr.flat())
 //for (let frrIn of frr) {
 //	for (let element of frrIn) {
 //		console.log(element);
@@ -66,8 +63,8 @@ console.log(frr)
  
 const numbers = [5, 9, 3, 7, 2, 8, 1, 6, 4, 10];   //задание 10
 for (let i = 0; i < numbers.length - 1; i++) {
-const sum = numbers + numbers[i + 1];
-console.log("Сумма", numbers, "и", numbers[i + 1], "равна", sum);
+const sum = numbers[i] + numbers[i + 1];
+console.log("Сумма", numbers[i] , "и", numbers[i + 1], "равна", sum);
 }
 
 
