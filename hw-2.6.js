@@ -36,14 +36,13 @@ crr.pop('a')
 console.log(crr);
 
 
-let err = [9, 8, 7, 6, 5];   //задание 7
-let number = Number(prompt('Угадай число'));
-if (number == 9 || number == 8 || number == 7 || number == 6 || number == 5) {
-  alert('Угадал');   
+const err = [9, 8, 7, 6, 5];   //задание 7
+const guess = Number(prompt("Угадайте число:"), 10); // Запрашиваем у пользователя число
+if (err.includes(guess)) { // Проверяем, есть ли число в массиве
+  alert("Угадал");
 } else {
-  alert('Не угадал');   
+  alert("Не угадал");
 }
-
 
 //задание 8
 let reverse = a => a.split('') // разбиваем строку на массив символов
@@ -53,12 +52,7 @@ console.log(reverse('abcdef'))
 
 
 let frr = [[1, 2, 3], [4, 5, 6]];   //задание 9
-console.log(frr.flat())
-//for (let frrIn of frr) {
-//	for (let element of frrIn) {
-//		console.log(element);
-//	}
-//}
+console.log(frr.flat());
 
  
 const numbers = [5, 9, 3, 7, 2, 8, 1, 6, 4, 10];   //задание 10
