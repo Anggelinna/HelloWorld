@@ -37,3 +37,18 @@ const getRandomBrrNumbers = (num) =>{  //задание 6
 console.log(getRandomBrrNumbers(8));
 
 
+function getRandomInt(minValue, maxValue) {   //задание 7
+    return Math.round(Math.random() * (maxValue - minValue)) + minValue
+}   
+console.log(getRandomInt(10, 50));
+
+
+let now = new Date();   //задание 8
+console.log( now );
+
+
+let dateNow = new Date();  //задание 9
+dateNow.setDate(dateNow.getDate() + 73);
+console.log(dateNow);
+
+
