@@ -52,3 +52,50 @@ dateNow.setDate(dateNow.getDate() + 73);
 console.log(dateNow);
 
 
+let ten = (currentDate) => {  //задание 10
+    let zero = (n) => {
+     if (n < 10) {
+        return n < 10 ? '0' + n : n;
+    }};
+    let date = zero(currentDate.getDate());
+    //if (date < 10) {
+    //   date = "0" + date;
+    //};
+    let month = months[currentDate.getMonth()-1];
+
+    let day = days[currentDate.getDate()];
+
+    let hours = currentDate.getHours();
+    if (hours < 10) {
+        hours = "0" + hours;
+    };
+
+    let min = currentDate.getMinutes();
+    if (min < 10) {
+        min = "0" + min;
+    };
+
+    let sec = currentDate.getSeconds();
+    if (sec < 10) {
+        sec = "0" + sec;
+    };
+    console.log(`Дата: ${date}.${month}.${currentDate.getFullYear()} - это ${date}.`);
+    console.log(`Время: ${hours}:${min}:${sec}`);
+}
+ten(currentDate = new Date);
+
+//задание 11
+let gameArr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+gameArr = gameArr.sort(() => Math.random() - 0.5);
+alert(gameArr);
+
+let ansver = prompt('Чему равнялся первый элемент массива?');
+let ansver1 = prompt('Чему равнялся последний элемент массива?');
+
+if (ansver.toLowerCase() == gameArr[0].toLowerCase && ansver1.toLowerCase == gameArr[6].toLowerCase) {
+    alert('Поздравляем! Вы угадали все верно.');
+} else if (ansver.toLowerCase() !== gameArr[0].toLowerCase && ansver1.toLowerCase !== gameArr[6].toLowerCase) {
+    alert('Вы не угадали.');
+} else {
+    alert('Вы были близки к победе!');
+}
