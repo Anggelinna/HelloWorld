@@ -54,15 +54,22 @@ console.log(dateNow);
 
 let ten = (currentDate) => {  //задание 10
     let zero = (n) => {
-     if (n < 10) {
-        return n < 10 ? '0' + n : n;
-    }};
+        if (n < 10) {
+           return '0' + n
+        }
+        return n;
+    };
+    //const currentDate = new Date()
+    //console.log( zero(currentDate.getDate()) )
     let date = zero(currentDate.getDate());
-    //if (date < 10) {
-    //   date = "0" + date;
-    //};
-    let month = months[currentDate.getMonth()-1];
+    if (date < 10) {
+       date = "0" + date;
+    };
 
+    let months = ["января", "феврвля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
+    let month = months[currentDate.getMonth()];
+
+    let days = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
     let day = days[currentDate.getDate()];
 
     let hours = currentDate.getHours();
@@ -82,7 +89,9 @@ let ten = (currentDate) => {  //задание 10
     console.log(`Дата: ${date}.${month}.${currentDate.getFullYear()} - это ${date}.`);
     console.log(`Время: ${hours}:${min}:${sec}`);
 }
+ten(new Date (prompt (`Введите год`), prompt(`Ведите номер месяца`), prompt(`Введите день месяца`), prompt(`Введите час`), prompt(`Введите минуты`), prompt(`Введите секунды`)))
 ten(currentDate = new Date);
+
 
 //задание 11
 let gameArr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
@@ -92,9 +101,9 @@ alert(gameArr);
 let ansver = prompt('Чему равнялся первый элемент массива?');
 let ansver1 = prompt('Чему равнялся последний элемент массива?');
 
-if (ansver.toLowerCase() == gameArr[0].toLowerCase && ansver1.toLowerCase == gameArr[6].toLowerCase) {
+if (ansver.toLowerCase() == gameArr[0].toLowerCase() && ansver1.toLowerCase() == gameArr[6].toLowerCase()) {
     alert('Поздравляем! Вы угадали все верно.');
-} else if (ansver.toLowerCase() !== gameArr[0].toLowerCase && ansver1.toLowerCase !== gameArr[6].toLowerCase) {
+} else if (ansver.toLowerCase() !== gameArr[0].toLowerCase() && ansver1.toLowerCase() !== gameArr[6].toLowerCase()) {
     alert('Вы не угадали.');
 } else {
     alert('Вы были близки к победе!');
