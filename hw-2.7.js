@@ -95,16 +95,22 @@ ten(currentDate = new Date);
 
 //задание 11
 let gameArr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-gameArr = gameArr.sort(() => Math.random() - 0.5);
-alert(gameArr);
+let result = gameArr.sort(() => Math.random() - 0.5);
 
-let ansver = prompt('Чему равнялся первый элемент массива?');
-let ansver1 = prompt('Чему равнялся последний элемент массива?');
+function rememberWords(){
 
-if (ansver.toLowerCase() == gameArr[0].toLowerCase() && ansver1.toLowerCase() == gameArr[6].toLowerCase()) {
-    alert('Поздравляем! Вы угадали все верно.');
-} else if (ansver.toLowerCase() !== gameArr[0].toLowerCase() && ansver1.toLowerCase() !== gameArr[6].toLowerCase()) {
-    alert('Вы не угадали.');
-} else {
-    alert('Вы были близки к победе!');
+    alert(`Посмотрите на список фруктов, запомните порядок и нажмие "Ок" чтобы продолжить: ${result}`);
+
+    let ansver = prompt('Чему равнялся первый элемент массива?');
+    let ansver1 = prompt('Чему равнялся последний элемент массива?');
+
+    if (!ansver || !ansver1) {
+        alert('Вы ничего не ввели');
+    } else if (ansver.toLowerCase() === result[0].toLowerCase() && ansver1.toLowerCase() === result[result.length - 1].toLowerCase()) {
+        alert('Поздравляем! Вы угадали.');
+    } else if (ansver.toLowerCase() === result[0].toLowerCase() || ansver1.toLowerCase() === result[result.length - 1].toLowerCase()) {
+        alert('Вы были близки к победе!');
+    } else {
+        alert('Вы ответили неверно');
+    }
 }
