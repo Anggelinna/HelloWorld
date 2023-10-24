@@ -86,7 +86,7 @@ let ten = (currentDate) => {  //задание 10
     if (sec < 10) {
         sec = "0" + sec;
     };
-    console.log(`Дата: ${date}.${month}.${currentDate.getFullYear()} - это ${date}.`);
+    console.log(`Дата: ${date}.${month}.${currentDate.getFullYear()} - это ${day}.`);
     console.log(`Время: ${hours}:${min}:${sec}`);
 }
 ten(new Date (prompt (`Введите год`), prompt(`Ведите номер месяца`), prompt(`Введите день месяца`), prompt(`Введите час`), prompt(`Введите минуты`), prompt(`Введите секунды`)))
