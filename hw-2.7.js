@@ -70,7 +70,7 @@ let ten = (currentDate) => {  //задание 10
     let month = months[currentDate.getMonth()];
 
     let days = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
-    let day = days[currentDate.getDate()];
+    let day = days[(new Date()).getDay() - 1];
 
     let hours = currentDate.getHours();
     if (hours < 10) {
