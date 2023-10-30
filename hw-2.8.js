@@ -42,3 +42,17 @@ console.log(filter([3, -4, 1, 9], isPositive));
     ];
     
 console.log(filter(people, isMale));
+
+
+const timer = (dedline) => {         // задание 3
+    const current = setInterval(() => {
+        console.log(new Date());
+    }, 3000);
+
+    setTimeout(() => {
+        clearInterval(current);
+        console.log('30 секунд прошло')
+    }, dedline * 1000)
+};
+
+timer(30);
