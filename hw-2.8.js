@@ -56,3 +56,26 @@ const timer = (dedline) => {         // задание 3
 };
 
 timer(30);
+
+
+function delayForSecond(callbak) {      // задание 4
+    setTimeout(() => {
+        callbak();
+    }, 1000);
+}
+delayForSecond(function () {
+    console.log('Привет, Глеб!');
+});
+
+
+function delayForSecond2(cb) {     // задание 5
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+				if(cb) { 	cb(); }
+
+    }, 1000)
+}
+function sayHi (name) {
+    console.log(`Привет, ${name}!`);
+}
+delayForSecond2(() => sayHi('Глеб Иванов'));
